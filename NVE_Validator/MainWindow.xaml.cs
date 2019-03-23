@@ -21,10 +21,6 @@ namespace NVE_Validator
     /// </summary>
     public partial class MainWindow : Window
     {
-        #region UI
-        public float UI_NVE { get; set; }
-        #endregion
-
         public MainWindow()
         {
             InitializeComponent();
@@ -59,11 +55,10 @@ namespace NVE_Validator
                         else
                             sum += (int)Char.GetNumericValue(char_nve[i]);
                     }
-                    var val2 = (int)Char.GetNumericValue(char_nve[19]);
                     if ((sum + (int)Char.GetNumericValue(char_nve[19])) % 10 == 0)
                     {
                         listBox.Items.Add(tbx_nve.Text);
-                        //tbx_nve.Text = "";
+                        tbx_nve.Text = "";
                     }
                     else
                         MessageBox.Show("NVE/SSCC ist nicht korrekt");
