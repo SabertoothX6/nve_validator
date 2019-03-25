@@ -16,7 +16,7 @@
             <ColumnDefinition Width="300"/>
             <ColumnDefinition Width="100"/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="btn_validate" Content="Button" Margin="17.4,10,8.4,7" Grid.Column="2" Grid.Row="0" Click="btn_validate_Click"/>
+        <Button x:Name="btn_validate" Content="Überprüfen" Margin="17.4,10,8.4,7" Grid.Column="2" Grid.Row="0" Click="btn_validate_Click"/>
         <TextBox x:Name="tbx_nve" HorizontalAlignment="Left" Height="23" Margin="10.2,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="290" Grid.Column="1"/>
         <ListBox x:Name="listBox" Margin="10,6,-5.6,10.8" Grid.ColumnSpan="3" Grid.Row="1" AutomationProperties.IsRowHeader="True"/>
         <Label x:Name="lbl_nve" Content="NVE/SSCC" Margin="10,10,10.8,0" VerticalAlignment="Top" RenderTransformOrigin="-0.061,0.095" Height="32" Grid.Column ="0" Grid.RowSpan="2"/>

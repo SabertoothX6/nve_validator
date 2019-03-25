@@ -37,7 +37,7 @@ namespace NVE_Validator
                 }
                 else if (tbx_nve.Text.Length < 20)
                 {
-                    MessageBox.Show("Eingabe ('" + tbx_nve.Text + "') ist kürzer als 20 Stellen");
+                    MessageBox.Show("Eingabe ('" + tbx_nve.Text + "') ist kürzer als 20 Stellen.\nHaben Sie die führenden Nullen vergessen?");
                 }
                 else if (tbx_nve.Text.Length > 20)
                 {
@@ -61,7 +61,7 @@ namespace NVE_Validator
                         tbx_nve.Text = "";
                     }
                     else
-                        MessageBox.Show("NVE/SSCC ist nicht korrekt");
+                        MessageBox.Show("NVE/SSCC ist nicht korrekt: Prüfziffer falsch");
                 }
             }
             else
